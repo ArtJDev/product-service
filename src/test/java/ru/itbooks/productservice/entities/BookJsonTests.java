@@ -10,8 +10,7 @@ import java.time.Instant;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @JsonTest
-public class BookJsonTest {
-
+public class BookJsonTests {
     @Autowired
     private JacksonTester<Book> json;
 

@@ -1,4 +1,4 @@
-package ru.itbooks.productservice.controllers;
+package ru.itbooks.productservice.entities;
 
 import jakarta.validation.ConstraintViolation;
 import jakarta.validation.Validation;
@@ -6,7 +6,6 @@ import jakarta.validation.Validator;
 import jakarta.validation.ValidatorFactory;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import ru.itbooks.productservice.entities.Book;
 
 import java.util.List;
 import java.util.Set;
@@ -98,7 +97,7 @@ public class BookValidationTests {
 
     @Test
     void publisherNotDefinedValidationTest() {
-        Book book = Book.of("12345", "Title", "Author", 100.0,null);
+        Book book = Book.of("12345", "Title", "Author", 100.0, null);
         Set<ConstraintViolation<Book>> violations = validator.validate(book);
         assertThat(violations).isEmpty();
     }

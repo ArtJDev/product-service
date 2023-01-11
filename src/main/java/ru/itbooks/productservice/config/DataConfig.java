@@ -1,2 +1,10 @@
-package ru.itbooks.productservice.config;public class DataConfig {
+package ru.itbooks.productservice.config;
+
+import org.springframework.context.annotation.Configuration;
+import org.springframework.data.jdbc.repository.config.EnableJdbcAuditing;
+
+@Configuration
+@EnableJdbcAuditing
+public class DataConfig {
+
 }
