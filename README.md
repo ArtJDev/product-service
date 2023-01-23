@@ -30,3 +30,18 @@ Json объект для POST, PUT запросов
     "article":"12345",
     "price": 100.0
 }
+## Сервер конфигурации
+Для тестирования загрузки конфигурации необходимо сначала запустить сервер конфигурации [config-service](https://github.com/ArtJDev/config-service) и 
+упаковать приложение product-service в jar архив командой `./gradlew bootJar`. 
+
+Запустить product-service с настройками из файла product-service.yml сохраненными в репозитории [config-repo](https://github.com/ArtJDev/config-repo):
+
+Команда - `java -jar build/libs/product-service-0.0.1-SNAPSHOT.jar`, эндпоинт - `http://localhost:9001/`
+
+Запустить product-service с настройками из файла product-service-prod.yml сохраненными в репозитории [config-repo](https://github.com/ArtJDev/config-repo):
+
+Команда `java -jar build/libs/product-service-0.0.1-SNAPSHOT.jar --spring.profiles.active=prod`, эндпоинт - `http://localhost:9001/`
+
+Если сервер конфигурации [config-service](https://github.com/ArtJDev/config-service) не работает или не доступен, сервис продолжит работать с настройками по умолчанию
+
+В случае обновления настроек конфигурации в репозитории [config-repo](https://github.com/ArtJDev/config-repo), когда приложения product-service и config-service запущены необходимо сделать POST запрос на эндпоинт - `http://localhost:9001/actuator/refresh`, посмотреть новые настройки эндпоинт - `http://localhost:9001/`
