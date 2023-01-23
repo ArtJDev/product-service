@@ -1,8 +1,7 @@
 # product-service (ITBooks)
 Сервис для управления каталогом книг интернет магазина ITBooks
 
-**Стек: ![Java](https://user-images.githubusercontent.com/98458226/214100040-5255dc76-61d2-41c5-ba33-c6de86c4f468.jpg)Java 17, ![Spring Boot](https://user-images.githubusercontent.com/98458226/214100131-059ec03d-f2f0-4590-b25b-fded090d6eb6.jpg)Spring Boot 3.0, ![Spring Cloud](https://user-images.githubusercontent.com/98458226/214100206-a57714a0-7ee1-4461-ad4a-6684a04cd50c.jpg)Spring Cloud Config Client, ![Spring WebFlux](https://user-images.githubusercontent.com/98458226/214100288-3ac39a6b-680c-4613-b374-0e4d7e4e6a9d.jpg)Spring WebFlux, ![Spring Data](https://user-images.githubusercontent.com/98458226/214100370-49a7e7f9-0610-49ba-9c07-e94ecac238d2.jpg)Spring Data JDBC, ![PostgreSQL](https://user-images.githubusercontent.com/98458226/214100451-9db1419c-683b-4818-b11a-6f19cc422570.jpg)PostgreSQL, 
-![Flyway](https://user-images.githubusercontent.com/98458226/214100551-a4f5d982-ebaf-419e-921c-8efd9dfda693.jpg)Flyway, ![Junit](https://user-images.githubusercontent.com/98458226/214100614-257aa18f-c01c-4649-b8d1-1773c7ffc4b3.jpg)JUnit,![Mockito](https://user-images.githubusercontent.com/98458226/214100652-fd4ae2f9-a00d-4d97-bba5-d3cc6639a119.jpg)Mockito,![Testcontainers](https://user-images.githubusercontent.com/98458226/214100742-8a45e96a-4e50-4ebc-9968-b477f1b65427.jpg)Testcontainers, ![Gradle](https://user-images.githubusercontent.com/98458226/214100818-07f832f0-46fa-4ca1-bd7a-7dced36f13bc.jpg)Gradle.**
+**Стек: Java 17, Spring Boot 3.0, Spring Cloud Config Client, Spring WebFlux, Spring Data JDBC, PostgreSQL, Flyway, JUnit, Mockito, Testcontainers, Gradle.**
 ## Описание
 Проект представляет собой микросервис для управления каталогом книг системы приложений интернет магазина ITBooks. 
 Сервис совершает CRUD операции над книгами. В сервисе настроен клиент для взаимодействия с сервером конфигурации, который загружает конфигурацию из внешнего репозитория.
