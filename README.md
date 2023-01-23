@@ -1,7 +1,7 @@
 # product-service (ITBooks)
 Сервис для управления каталогом книг интернет магазина ITBooks
 
-**Стек: Java 17, Spring Boot 3.0, Spring Cloud Config Client, Spring WebFlux, Spring Data JDBC, PostgreSQL, Flyway, JUnit, Mockito, Testcontainers, Gradle.**
+**Стек: Java 17, Spring Boot 3.0, Spring Cloud Config Client, Spring WebFlux, Spring Data JDBC, PostgreSQL, Flyway, JUnit, Mockito, Testcontainers, Gradle, Docker.**
 ## Описание
 Проект представляет собой микросервис для управления каталогом книг системы приложений интернет магазина ITBooks. 
 Сервис совершает CRUD операции над книгами. В сервисе настроен клиент для взаимодействия с сервером конфигурации, который загружает конфигурацию из внешнего репозитория.
