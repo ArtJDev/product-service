@@ -9,7 +9,7 @@
 ## Запуск
 Для работы сервиса необходимо сначала развернуть и запустить базу данных PostgreSQL в контейнере Docker. Для этого необходимо на компьютере иметь запущенное приложение Docker. Далее создать папку на своем компьютере, скачать и положить в эту папку из [этого](https://github.com/ArtJDev/itbooks-deployment/tree/main/docker) репозитория скрипт docker-compose.yml и папку postrgresql со скриптом init.sql. Далее открыть окно терминала, перейти в созданную папку со скриптом Docker и выполнить команду `docker-compose up -d itbooks-postgres`, Docker подтянет образ PostgreSQL, настроит необходимые базы данных и запустит их в контейнере "itbooks-postgres".
 Запуск приложения осуществляется командой `./gradlew bootRun`. При первом запуске в базу данных будут загружены тестовые данные.
-Также возможен запуск приложения из контейнера Docker, для этого сначала нужно сбилдить образ приложения `./gradlew bootBuildImage`, 
+Также возможен запуск приложения из контейнера Docker, для этого сначала нужно построить образ приложения `./gradlew bootBuildImage`, 
 затем выполнить команду `docker-compose up -d product-service`.
 ## Спецификация REST API
 | Endpoint | HTTP method | Request body | Status | Response body | Описание |
